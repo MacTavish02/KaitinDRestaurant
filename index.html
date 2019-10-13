@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html len="en">
+<head>
+<meta http-equiv="expires" content="Sun, 01 Jan 2014 00:00:00 GMT"/>
+<meta http-equiv="pragma" content="no-cache" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-We are Photographers</title>
+	<link rel="stylesheet" href="nav.css">
+	<link rel="stylesheet" href="index.css">
+</head>
+<script>
+function expand()
+{
+	document.getElementById("sidebar").classList.toggle('active');
+	document.getElementById("toggle-btn").style.display="none";
+}
+function collapse()
+{
+	document.getElementById("sidebar").classList.toggle('active');
+	document.getElementById("toggle-btn").style.display="block";
+}
+
+</script>
+<body>
+<div id="sidebar" class="col-s-4 col-m-3">
+<div id="toggle-btn" onclick="expand()"><br>
+<span class="btn-span"></span>
+<span class="btn-span"></span>
+<span class="btn-span"></span>
+</div>
+<ul>
+<div id="toggle-btn2" onclick="collapse()">
+<span class="btn-span"></span>
+<span class="btn-span"></span>
+<span class="btn-span"></span>
+</div><br>
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html">About</a></li>
+<li><a href="index.html">Contact</a></li>
+</ul>
+</div>
+<div class="heading">
+<span class="t1">We are</span>
+<span class="t2">Photographers</span>
+</div>
+<div class="row">
+<div class=" col-d-3 col-t-5 col-s-10 col-m-6 login">
+<h2>Login</h2>
+<form action="http://localhost:8080/examples/Photographer/validate.php" method="POST">
+
+<input type="text" placeholder="Username" name="username" required></input>
+<input type="password" placeholder="Password"name="password" required></input>
+
+<input type="submit" name="Submit" value="Log In">
+<a  href="signup.html">Don't have an account ?</a>
+</form>
+</div>
+</div>
+</body>
+</html>

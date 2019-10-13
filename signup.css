@@ -1,0 +1,18 @@
+select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #3498db;
+  border-radius: 25px;
+  box-sizing: border-box;
+  background:rgba(0,0,0,.8);
+  color:white;
+  text-align:center;
+  transition:0.25s;
+  outline:none;
+}
+select:hover,select:focus {
+  border-color:#2ecc71;
+  width:90%;
+}
